@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(235, 235, 235);
+    font-family: sans-serif;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #22d3d3;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.head {
+    margin-top: 50px;
+}
+
+.head h1 {
+    color: #fff;
+    font-size: 50px;
+}
+
+.head p {
+    background-color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #22d3d3;
+}
+
+p span {
+    padding: 0 10px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #2daaaa;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+}
+
+.footer p {
+    padding: 5px 0;
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.play-board {
+    border-collapse: collapse;
+    max-width: 300px;
+    max-height: 300px;
+    margin: auto;
+    position: relative;
+    top: 90px;
+    padding: 0 10px;
+    
+}
+
+.border-top {
+    border-top: none;
+}
+
+.border-bottom {
+    border-bottom: none;
+}
+.border-left {
+    border-left: none;
+}
+
+.border-right {
+    border-right: none;
+}
+td {
+    border: 7px solid #219797;
+    width: 100px;
+    height: 100px;
+
+}
+
+.you {
+    text-align: center;
+    color: #fff;
+    font-size: 60px;
+    font-style: italic;
+}
+
+.computer {
+    text-align: center;
+    color: #424141;
+    font-size: 60px;
+    font-style: italic;
+}
+
+.win {
+    text-align: center;
+    color: rgb(31, 180, 81);
+    font-size: 60px;
+    font-style: italic;
+}
+
+.lost {
+    text-align: center;
+    color: rgb(219, 25, 25);
+    font-size: 60px;
+    font-style: italic;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 41%;
+    width: 250px;
+    height: 100px; 
+    background-color: rgb(255, 255, 255);
+    z-index: 1000;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+@media (max-width: 400px) {
+	.popup {
+		left: 26%;
+        width: 175px;
+	}
+}
+
+@media (max-width: 650px) and (min-width: 400px) {
+	.popup {
+		left: 30%;
+        width: 180px;
+	}
+}
+
+.popup .box {
+    margin: 20px;
+    
+}
+
+.box p {
+    margin-bottom: 10px;
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: #22d3d3;
+    font-weight: bold;
+}
+
+@media (max-width: 400px) {
+	.box p {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 650px) and (min-width: 400px) {
+	.box p {
+		font-size: 20px;
+	}
+}
+
+.box button {
+    padding: 5px 15px;
+    background-color: #22d3d3;
+    border: none;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.box button:hover {
+    padding: 5px 15px;
+    color: #22d3d3;
+    border: solid 2px #22d3d3;
+    background-color: #fff;
+    
+}
+
+.backdrop {
+	position: fixed;
+	display: none;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	top: 0;
+	left: 0;
+}
